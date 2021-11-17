@@ -61,3 +61,33 @@ body {
 
     display: flex;
 }
+
+.flex-left{
+
+    margin: 10px;
+    flex: 0.3;
+    border: 2px solid dodgerblue;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.flex-center{
+
+    margin: 10px;
+    flex: 0.3;
+    border: 2px solid dodgerblue;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.flex-right{
+
+    margin: 10px;
+    flex: 0.3;
+    border: 2px solid dodgerblue;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
