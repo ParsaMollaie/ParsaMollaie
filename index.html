@@ -13,7 +13,12 @@
     <title>Kermanshah</title>
     <link rel="icon" type="image/x-icon" href="./icon.png">
     
-    
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
     
  
 </head>
@@ -25,7 +30,8 @@
                 <h1><b>Kermanshah</b></h1>
                 
                 <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button> <hr>
+                <button type="submit"><i class="fa fa-search"></i></button> 
+                <button onclick="myFunction()" class="btn-dark">dark mode</button><hr>
 
             </div>
         

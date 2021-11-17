@@ -12,13 +12,13 @@ width: 100%;
 }
 
 td, th {
-border: 1px solid #dddddd;
+border: 1px solid #be5050;
 text-align: left;
 padding: 8px;
 }
 
 tr:nth-child(even) {
-background-color: #dddddd;
+background-color: #9e3232;
 }
 
 .footer {
@@ -40,7 +40,7 @@ video {
 
 .link a{
     text-decoration: none;
-    color: black;
+    color: dodgerblue;
 }
 
 .border_middle{
@@ -49,17 +49,21 @@ video {
     padding: 10px;
     width: 90%;
     margin: auto;
-    background-color: white;
+
 }
 
 body {
-    background-color: #e1e1e1;
-}
+    padding: 25px;
+    background-color: white;
+    color: black;
+    
+  }
 
 
 .flex{
 
     display: flex;
+    justify-content: space-around;
 }
 
 .flex-left{
@@ -91,3 +95,13 @@ body {
     padding: 5px;
     border-radius: 5px;
 }
+
+.btn-dark{
+
+    float: right;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
