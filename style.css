@@ -26,7 +26,6 @@ background-color: #dddddd;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #e1e1e1;
     color: rgb(121, 14, 14);
     text-align: center;
     background-color: white;
@@ -57,3 +56,8 @@ body {
     background-color: #e1e1e1;
 }
 
+
+.flex{
+
+    display: flex;
+}

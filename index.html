@@ -9,213 +9,215 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="shortcut icon" href="/static/favicon/wikipedia.ico"> -->
     <title>Kermanshah</title>
-
+    <link rel="icon" type="image/x-icon" href="./icon.png">
     
     
     
  
 </head>
 <body>
-   <div class=" main"> 
+   <div class=" main flex-container"> 
 
-        <div>
-            <h1><b>Kermanshah</b></h1>
-            
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button> <hr>
+      
+            <div>
+                <h1><b>Kermanshah</b></h1>
+                
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button> <hr>
 
-        </div>
-    
-        <div class="link">
-            <ul >
-                <li> <a href="#m1">About Kermanshah</a></li>
-                <li><a href="#m2">History of Kermanshah</a> </li>
-                <li><a href="#m3">Culture of Kermanshah</a></li>
-                <li><a href="#m4">Populer place of Kermanshah</a></li>
-            </ul>
-        </div> <hr>
-
-        <div class="border_middle">
-            <h3 id="m1"><b>About Kermanshah</b></h3> <hr>
-            <p> <b>Kermanshah</b> is a capital of Kermanshah province that located in west part of Iran. Kermanshah is one the beautiful city of Iran and every year many tourist going to Kermanshah. A majority of Kermanshah's population speaks Kurdish.<br>
-                    <img src="data:image/jpeg;base64,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" alt="Picture of Tagh bostan">
-               
-               
-                    Kermanshah has a moderate and mountanins climte. most of population of are kermanshah are Shia Muslims but there are also Sunni Muslims and other religios.,<br>
-                    "Kermanshah" derives from the Sasanian-era title Kirmanshah, which translates as "King of Kerman". Famously, this title was held by the son of Shapur III, Prince Bahram, who was bestowed with the title upon being appointed governor of the province of Kirman (present-day Kerman Province).Later, in 390, when he had already succeeded his father as Bahram IV (r. 388–399), he founded Kermanshah, and applied his former title to the new city, i.e. "(City of the) King of Kerman"<br>
-                    After the revolution in 1979, the city was named Ghahramanshahr for a short period of time, and later the name of the city as well as the province changed to Bakhtaran, apparently due to the presence of the word "Shah" in the original name. Bakhtaran means western, which refers to the location of the city and the province within Iran. After the Iran–Iraq War, however, the city was renamed Kermanshah, as it resonated more with the desire of its residents, the Persian literature, and the collective memory of the Iranians.
-             </p>
-        </div>
-
-        <br>
+            </div>
         
-        <div class="border_middle">
-            <h3 id="m2"><b>History of Kermanshah</b></h3> <hr>
-            <p>Kermanshah was founded by Bahram IV, he founded Kermanshah and applied his former title to the new city (City of the) King of Kerman. In Iran and Ieaq war damaged lot and many people died because of location of Kermanshah.<br>After the revolution in 1979, the city was named Ghahramanshahr for a short period of time, and later the name of the city as well as the province changed to Bakhtaran, apparently due to the presence of the word "Shah" in the original name.<br> Bakhtaran means western, which refers to the location of the city and the province within Iran. After the Iran–Iraq War, however, the city was renamed Kermanshah, as it resonated more with the desire of its residents, the Persian literature, and the collective memory of the Iranians.<br> Because of its antiquity, attractive landscapes, rich culture and Neolithic villages, Kermanshah is considered one of the cradles of prehistoric cultures.<br> According to archaeological surveys and excavation, the Kermanshah area has been occupied by prehistoric people since the Lower Paleolithic period, and continued to later Paleolithic periods till late Pleistocene period. The Lower Paleolithic evidence consists of some handaxes found in the Gakia area to the east of the city. The Middle Paleolithic remains have been found in various parts of the province, especially in the northern vicinity of the city in Tang-e Kenesht, Tang-e Malaverd and near Taq-e Bostan. </p> <hr>
-        </div>
+            <div class="link">
+                <ul >
+                    <li> <a href="#m1">About Kermanshah</a></li>
+                    <li><a href="#m2">History of Kermanshah</a> </li>
+                    <li><a href="#m3">Culture of Kermanshah</a></li>
+                    <li><a href="#m4">Populer place of Kermanshah</a></li>
+                </ul>
+            </div> <hr>
 
-        <br>
-        <div class="border_middle">
-            <h3 id="m3"><b>Culture of Kermanshah</b></h3> <hr>
-            Kermanshah is a traditional city because of the history of city. Kermanshah has a very rich culture and the people of the city include different religions and languages. Kermanshah has many traditional industries like:<br>
-            <ul>
-                <li>Give</li>
-                <li>Jajim</li>
-                <li>Kurdi carpet</li>
-            </ul> 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzloLZ1KVMo7j32I3cELOu0RTv_i2fdV1OQ&usqp=CAU" alt="Noon berenji"> 
-            Also, the people of Kermanshah care about their food, or in other words, they are food lover, so they have much tastier food the most populer food and cookies in kermanshah are: <br>
+            <div class="border_middle">
+                <h3 id="m1"><b>About Kermanshah</b></h3> <hr>
+                <p> <b>Kermanshah</b> is a capital of Kermanshah province that located in west part of Iran. Kermanshah is one the beautiful city of Iran and every year many tourist going to Kermanshah. A majority of Kermanshah's population speaks Kurdish.<br>
+                        <img src="./taghBostan.jpg" alt="Picture of Tagh bostan">
+                
+                
+                        Kermanshah has a moderate and mountanins climte. most of population of are kermanshah are Shia Muslims but there are also Sunni Muslims and other religios.,<br>
+                        "Kermanshah" derives from the Sasanian-era title Kirmanshah, which translates as "King of Kerman". Famously, this title was held by the son of Shapur III, Prince Bahram, who was bestowed with the title upon being appointed governor of the province of Kirman (present-day Kerman Province).Later, in 390, when he had already succeeded his father as Bahram IV (r. 388–399), he founded Kermanshah, and applied his former title to the new city, i.e. "(City of the) King of Kerman"<br>
+                        After the revolution in 1979, the city was named Ghahramanshahr for a short period of time, and later the name of the city as well as the province changed to Bakhtaran, apparently due to the presence of the word "Shah" in the original name. Bakhtaran means western, which refers to the location of the city and the province within Iran. After the Iran–Iraq War, however, the city was renamed Kermanshah, as it resonated more with the desire of its residents, the Persian literature, and the collective memory of the Iranians.
+                </p>
+            </div>
+
+            <br>
             
-            <ul>
-                <li>Dande kebab</li>
-                <li>kak</li>
-                <li>Noon berenji</li>
-                <li>khelal</li>
-            </ul>
-            <br>
-            <br>
-            <br>
-            <br>
-            <hr>
-        </div>
-
-        <br>
-        <div class="border_middle">
-           
-            <h3 id="m4"><b>Populer place of Kermanshah</b></h3> <hr>
-            <div>
-                <h3>Bistun Mountain</h3>
-                <p>The Behistun inscription is considered as a UNESCO World Heritage Site.The inscription includes three versions of the same text, written in three different cuneiform script languages: Old Persian, Elamite, and Babylonian. A British army officer, Henry Rawlinson, had the inscription transcribed in two parts, in 1835 and 1843. Rawlinson was able to translate the Old Persian cuneiform text in 1838, and the Elamite and Babylonian texts were translated by Rawlinson and others after 1843. Babylonian was a later form of Akkadian: both are Semitic languages. In effect, then, the inscription is to cuneiform what the Rosetta Stone is to Egyptian hieroglyphs: the document most crucial in the decipherment of a previously lost script.<br>The inscription is approximately 15 metres high by 25 meters wide, and 100 meters up a limestone cliff from an ancient road connecting the capitals of Babylonia and Media (Babylon and Ecbatana). It is extremely inaccessible as the mountainside was removed to make the inscription more visible after its completion. <br> The Old Persian text contains 414 lines in five columns; the Elamite text includes 593 lines in eight columns and the Babylonian text is in 112 lines. The inscription was illustrated by a life-sized bas-relief of Darius, holding a bow as a sign of kingship, with his left foot on the chest of a figure lying on his back before him. The prostrate figure is reputed to be the pretender Gaumata. Darius is attended to the left by two servants, and ten one-metre figures stand to the right, with hands tied and rope around their necks, representing conquered peoples. Faravahar floats above, giving his blessing to the king. One figure appears to have been added after the others were completed, as was (oddly enough) Darius' beard, which is a separate block of stone attached with iron pins and lead. </p>
-            </div>
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYYGBgaHB4cGhocGhwZHB0cHBoaHB4hHBweIS4lHCEsHxwYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjErJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALoBDwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAD0QAAIBAgQEBAQDCAEDBQEAAAECEQAhAwQSMQVBUWEicYGREzKh8LHB0QYUQlJicoLh8RUjkkNTorLCM//EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAjEQACAgEEAwADAQAAAAAAAAAAAQIRIQMSMUEEIlFhcbET/9oADAMBAAIRAxEAPwCOIKocUY60NjV9CeOLsY13h+U1uJ2+p7Co4gkxTfJ4CAagfHy6VEikWB1TwuVAOxFtuVHYLqLAgiPob1njgDEzCoORuDzFhHtWvThwRR1/WubVklybQi2X8LwRckX29qewQo6UuyxFopsLqBXnTduzsiqQNh4gU1a2NNxS/MAg15cbkaRVlmM1DNi13M4wpcuJM00iGwxsS1Q1kmKHQmamHi1XRIXl7UUuNQOHtVb4sVNDTGmJmABS7Gzd7Uszeei00ImbB51SiDY7w8zcVa+PIpN+81Jc1VbRWW5jGIJojK5rw6RvS12k1fkxEnyrSsEjbAxm+WL7zTHL5hQIJpUXUCdyaXvM1m42Vuo0T44NxS3P53SskwOlDZfGYHtS/j2LKEDerhp+yJnLBjc/ia3dt5J9uX0rmRymppI8IMsfrUkwCZI6xTDhQKkk2S4PSSPrXoKJxtgeBl/+6CLgGd425VoMDLJiMAyLI25Qd9vX61nc4SpsTBk+5qfC86UcMxMc79rflTfwSNJxV/gISUBLDbp9zWXwMd9Yc+gnlTTivE/3hQFBmed/v/VL3wyoU7QACOkURTHJ/BzxLNFsCBvy/wBUVwjOLoHiIO0VmcxnSdrWg0MmbcTB3uaJJcAmzWO1A5l6Jc0OqapNaEAK4JYE7UbwfKvOqDBFj9KZZLBQ2IrR5HLJoIG21Yas9qNYR3CTh+EEfVFwafZy9+1C4qIk2vFAf9QmEntXJNOTtG8Wo4Y1yKPqHNfwp7JgUqymNIEU0wXkVyS5OmINjJNLcyCDTLMYsGledxRSQSBcV6oRr17EeaqRq1ozDHxYFqEOJFVvjioMbUJAMMLNSIoXOZoAUAM3pkUi4tnmZggO+/lSdIaVns/xFmbw7Dn3qvCz5UjVsefSisPhXgDM0SNo2BmJM9KAzGV1Lv6gdYEx6rULULcBnkuIhyQpuPqOtMQ9prH5vJNhMAdQ1Dwk2nr99xTJOIsghpYQL87QDHWrjqLslxZo8HEmjkakuXxAYIMg0amNWxnQ0+JViEGlnxZq3DxaBsbKgi1K+I5YG522+tHZTGok4atciqi9rIkrMbjIqBpHKY70lxc0Y0zbpWq/aHhrPLINht5ViWF712RnaOZxyXPiE1EgQTz+/ai+HABvEuqRAHc9udpq7i2CitCCxAnselWIAyOZKMGHI7HY+dFZzNlyWIAnkBAoRcE1ccOmrJbBmvVcUwTC6iq80ijahxGpGgcWNXYOHC9zVeEZq55O1NkleC8NJ2p7lnaDFxE2pOGGxPrRGPxNUsom1z+FZTV4Li6OZ/iJDHtSTCY69Wwm1Fa9YJNjPvV/DsqXMsDEED9RUuoopXJj7hWKSLCQNzTwtCihcnhKmGFgTt3tsTR+PGj0ry5tOTo74KlkV5jGpPm8fvRGcxImsbxXiTB5EaRb1oiqBqzRfFobFx4pCOKOGvEVDFzxcHQfWq3Inaxri5mhMfijCw9aTPjvFzuJHKRVWA+okX21czz/AOKTkUohmPnmJE2mj+D8EZm+I/yi8GSTIMW6b1HhHCtSl3SQzKqEyJmZMeX0BrS5llQaYgt2/E/2g/hXPKfSNow7YLmBIItIIHLtIHrS7Izq1Xs9mgEGWWTbey2/tG1EM+lLsdwxPOCSB6XPp0ry4fgGle4uZkHVIO23vHepspo9+0uXV1YXBUkhuclp7kgn8azGISTbYRz7f7FP89mdRLQTqCzB5TeOm4vbrUcnkEdirMA4LQLQVkgQB0A9hVRlSJkrYny2dOGdDAlSbHp+v/NO8PMWB5UL+02SREQIQCNXPeI9raz/AI0myuaZVZBeDKztcyZ7XFbw1DKcTW4eaFE4ePWMPFwIDAg8xv7daMy3GFJgNWykjJxZtsB6YYeOBvWcyOakTTVYZYPOtFkhk8/mxBggTz3pHiZHCdJAhuZiO/61Tn8F1P8ATMDnTTMZU/DAXped5rpgkkYSdsFy+SRn1q0nc8gI6UHxvKqrACZN+0XoZMwUYEbj7vRGYxzi6TzEiO2+9bdmfQHh4e1X/Ao9OHOqy1ug517DQTDA1VomhY6VVjYANNcTLcxNVHKMdlJjtRaCmW4Sx5VJ35CvL0pvwTJgtqYqQOW9KbSVscVboQ4qGp5LD1OoYGNiR9K0eYbDLFYGkn8O9EIcMfKqi8nvWEtRpcGkYK+RRjcFdfFPh6xypvwfDUfLNzJn7ttTAY4YRyP6UFlmCPHKuOepKSpnVGEYu0Myg1VDOY4CmTFSx8dRBBrJ8ezpfECjobdz9/SuY3SBOK8V1voQebfpSjMZLXhuNM6Qdt5ttV/DMKQzsY3AkTZTFo9TUjxBQQAGAubiLmN/fn0pOXwaQoymWDoW6WM8tMj8a5wxguJBUlAumx7TMdSJqzGxAH8MtElgtrQDB82AG1DcEDnEZuSr/FYXMAnna/ehsKBs9mizy6sYNoHyreRHSxrV5XKqMNWChNiZA1EWse/K+1ZzO5ZhjDwkhm8NvCZ5COdzbvWqbSgSTpsBNrEwbAjcyR6is5SLig3FxwwQoBa49SLxyMGhMxiFlggzA5S3Mx6ztepZNtZggSpO3MCLibib1RjYil9INybhTMAEqLbmB+JrI1I4GFLnUsbQSLyJb8fxqWGQHZSJkTeZIuDBUdBvFG4OWgQJMC5a2mQTt2H3ehMZ0NgzKTqC2UXCzpAPIwbWosKBMV1WNSQJW92ERptFxsefTpVSYKh1dLqzCBzizSb8pa3c9aqzOVOvS0+G5ZREk/LKk29/TervgHQPnTREkwRYAysbR3PaqtEBOaknRpDhpHWwBJvIA5UixuHEeMQUMwQQRYwZ522n3rQ5lHxCjLpYGNUdDuRzWb3Hao5fKkJ41AeNjICARpASdNhAkDketEZUDjZjcfDD6lJuCD5Dt9aEfBKk26ff41pM/wAJZnL4Y1xuBaBOofmPag1w2W5B9rC5/Wt4ysycS39n+IwwwmJufCTy3JB/KttlTXzt8oGEi2558ifatD+zXEnbUjksy31Hcg2I9Dz710ac7wzGcayaLPL8sKGvtSnPcRIJXTBpqcdTuKC4rkQQGklj9xFdsGuGcskIsNCx6kmnmX4cUhzFrxS9UK9qKfiBiDe1bsysZJmgx8UEnkdhQeoajN77ilwxjUhjRQlQWa/L4yaQSojai3wk0ztMWG30rGpxAimGS4k7kgCsZab5TNIz+gj5ciistmClhz3q9x1ofEroeTCz2Lj278v+aGwc0VNTN6qZKmh2Gf8AUXtBozKuxcFr7Gl2Dh0anE0QMoGtlFhMAHuewm3lXNrbYxs20t0pUT4pxrDR9BmRAJgn76UiwXZ8fXMrOsA7xpHuB+dAZ5dWKszc3PWwYmfX72onhON4mJsWkDmYBhojobV5k3g9GKLeJZxURhF4BIA2k6ZPSbj19aAwHDnxMBafQkxv/b9KlnsNAjgkhSQG3IAAHLzv6mlPD3DoEnxKV2BvGIWtzmDHp3qE8FPkaYGMdLtpE4mIAnIgeET3Mkdq9wt1OI6BlhkOm8wyELc+TIf8po/i6hFVkWdMGI9TubmR15b8itwwodwEgaFQQNJFtQ0wIEwZ/GouymqZHh+afFxUPhREckknTOoNA/8Aipg8iKZ8czhw8LDYyAzoWI3JJQwTeYAfb+mlGVwz8UeHSgcHSIiOVxYQR7RR/HM2hcYbQyokHUNyQFAjp4l9zSfKCPDCuH5ggMxAFyQB/bJkncyCv+Jq5MNFKMiyWfS5trsSoE7iIn8d6F4ZmpIU+KIAbaB8TS4sbaiQeXntVXDHnNMDFgrE9GKkMR3IB2/mqWWgoYGjHLEsAsazqgFWMAHkYOrvtR2bx0RDrIIABAYLt8puJnr1pFn8UnFKg7ptNiZXfyE2vEiutgtjFFB8Jk4jzHhGnVc8zt93X7HYxfFAYPK6SqjSTO5EQdh4rd5FdbNESEVizMCVHiJGnTOneJInmZ86px8IAuzI0ahcGVi0W5eKPxr2GxWX1BgNJ1AxGwELI6HpECkBXhYhXFKv4NRBQgnclpFgNoF+pPnRuJnFxQVvqWx/mO4BnvF+kUJniwGG+guFeSwWTpGqSvmfSKvz+EdSst/DDJ5kE8uUculOwLspjFWRYswM2nlIHnHPyoLiqFGIKkJaDbmCf13ijMBwdLaFAE3Mh5tG/Y3naaKbMJi+A4cciDAJvEiDLTYz+FNSp2DjaM3g5bUpCR1v52/Sg8bDfCxlaIbdf6osQD0P51ruH8MQ4ZG41EX8JAHneQfwq3FyKsQXAtYE3Mbeu4+tWtSngzenayU5HOJiIpUEGbzuCOVMMB15ms3jI2DiEpBR7kAj5t7d4IEc7URhZ/VYcjBEQQe4NxXp6E1Nc5ODVg4PgbZ7IIZYHflWfxcMi1NgmIyzBihPhFjeuyOFVnNIhk8IExEmp57IaOd+lHZTDCnrRWZw0AkwSbwDtVN0xVgzAw+tNeGGBAgdWNVPhiagRyptWJOhrjMDQeK1cfGqAM1ZnZZhNFzVpYGhwtEYCVLGgzAypgk2gTSFToE/3Tz5kj8AKb5/GKpAnU/hEGNyASewBpZxDFXSUBWRAN/4pj/Ikzbt3ry/Lnckj0fFj6titcy5xBAEtpUmNiFDOI66Rv1otwFuSqtsFJvuNX1j1al2azSgkzpYK5FykkATFpNmgx036ewGGgGR8ouAFkExtNrRa+5riZ1oJxsZXwmRueuXixuYM85tSL9mhOLqv4Lk+wAM9bn0plnCFwySYK7kTcsSN42j8BUP2Yw1TCZy4GtufRDHpeTMchRdIOWF8SxsRlDadKXDHY76QB+tJ+G42K2YY4kX3BIABU2AO8wCPOaY4mc+Kjhxq8LBFkBbEqvvAPqeldzGUKYauABfW5kAspK+E+fuJG1SnWBvOSGPltTK5ZlAZZNhOpkU+gBg+Vutdy6F8fGdpHjAW8eFYBIiY/hJPfaic5xEHR8MXxCriACAdUo3a/3Y0OrFSyyPEw8Nj4ADzP8AVFSPA04MtmJA8REXhp5DbwiQBpHQ7zQ2Q1JjHxBgVxDqU+EElVVY/tBM3kgkdKIyuKoVyTcy2om14ChRH5fxc678VGETcuI5CVvvv0WOh95vLLxSBBlyzgs0lzoUQJIvLRyHh/CnWK6YSDDG41anMSSIYjVAm2kDpVmK6u6kfwRyidjAP8u1+foaBzil2gKRcggHcs2qCSI/hWYvvU3Y0qLhioniBBDzM9lLk77QLbnxDlRaFSqkrzB2FlEypnYc7XuKR4pb4oCrDCwGofxIikxzPhJ9N+VXYmO2vD0iPEQ3O2omTyUmPztRQWaDOYUgC6zaOxtyi8gH0qGRw9WgEMShgtMTA52Gr/VAvmmZxqQ6ZaAWAAsU9TNo7+1D51wZXVCvfYzpiTblBI3vBqVY8BWYtiFWuHJIERyHMbEfUH36jXBU+EXOowB5kcu/blVSYmshix23uNiCZtMxHPYHY1zL4by12Cm4jnPffb76MOQxM2U3VokAmQSCZEzNxbY3v5UUwUywuRzLECZDC/tSnN5mSqCZJN4Nl2sNpvQ3DsRmBUoTBIBkgixmOR+U3vRWAGOcynxCmk7nxe0WMWvFcxMqA6qbtc6j0t/F3M+3lVGNjuCIBgdGI0xygCDY+n4NMsxdPGLMPCYO4PPn51cZuLtEygnhkcXNHTpuPuKDmis3hlMMBmWZOlv4SYJjqJv/ALoXDEgHr9O1ex4uvGap8/08zX0ZRdrgmtea9WLXdFdtnKwcpVfwqM0Vxkp2IWY6wYq7CFRxFJN6uy+E03EC9zHKOW/P6VM9SEVcnREISk6irLcNJq3FxEwgGcxOw3J8hQuZzDqDoUTyLA/h186QZzNOZZzLCxmxAnpuRPQVxanmRr1ydmn4sr9g/iudLsIsBbcWBEmSOZiY/pG96RZ/FxFXwrAmAYgFydvFuIPLpVee4hocKdUkEhpIhtvlHLlv1mrcnmtaDYwRyk6h2N95PtXBKTk9zO2KUVSKVyWI+7AEgTe3hm+32KMZAmHMlgFABAmReR0N+ldzWaTDU6zqJAJTncmJ5HrB5DbasxmMziYrBZLbEKoAAHKALDap5K4HfE82oRA3iDc28MCZgmP6wN/Or+IImEqqmiCvi1iQwbxHe+5B/wAgKU4fB8VyutvCm/8AHCjcR9+tOcfBTMFnJJEBJB0jaYkEzuBNqTGrBeEQW8TazOpmIBgCAwCxaLd5ptxNNauqKICkkz/CVgxfa5vbbvVWWyqYYKhFgkTc+e8/e9EYOKFZ20/OukwZtEeEkeXsKmWXY0JOI4LqVJ8C7C3SYG8D+KP7qZ/Df4eG5QnVAZZj5WYHl1m3Ois9mw4QFV8POJNgL7W2HtXMG0MwmD8s/Met7f8AHlSvA+GX5vDVE0yuu6wORgwAZEAKPYUJlMqUOHqBYEntdtItuQ259OVFPjp4gUuWJYnfck79Se1h7z/fBqUtqsbwRJNjbaIjaeZ3sKnKKbQxbKtGgaUbSCBO7eMqADyBXz3oXL/MegFpsRpbSLjqdPQ0WmaR2Zg8SFC6hBEdzYGC1DYRkX2YwBHMMSPSQD31dKzyWmgHKRq1v/ExgCNjrnfkFmD2obIoVxA8wsENPImwG3dT3vR37lizHhdpsoYqIH+PUtPWeVVfCxQ8uiJpJYrqknUpW40/Wf4bXqyWH5hfF4TqEQdPIkl2k8hcUG4gEqGKQNQJaYBuLb8vOO9Xpr0M2kNqYbECNlMdLD7O8M2jphN4Aq6SJ+J4rSBAAIsR15etSsMoJwdBQETOrY9Da/Icv+avZ1MrvLcyPOI7ET3rmUwyWJgalNhuYjp1B/Gr2wyzCdBYQZHcHYgb/wC6TeQXArzoiYDQrkEXsCDPU3I+oofhOD/3CLgmTHeI5bj750+zOVDpBMNA2gXBMgnpehstgaH1Wtuo3IGq/vHXlTUsCayFaWAXUJGna3MraPUj/Gp4zaUUa4FgBzPvzsPauvmgVJi0bbgW5/jtVTP8UgAAqgBi8kG158vzqSyThGGl4YHkdpmIHuKryGSChghJAiFN1G9wPbboa9j5UFoEgqOvMWPTofWqkbFBMNEb6lE3Mifc+3eqjNrhkygnyGnLyJUjy/Q89j7VVpqvLuHMsEsZUi1x28uvSjUwyxMKT23MdZE163i+U36yZ5vkeOo+0UCxXIpguX1nwoRysbe5qrFyjLv+N67Fqxbo5ZabWehK/FsJNnSf5iyz3iTS3NftFhi4cMQeqtP3+VZVEDO6BCNBiTsbx9+lEDKDv7E/jXjSuTuTs9OKUVUVQxzP7Ra1IDNfkB+dI85xF2hixty6esRR6ZYdAf8AG3ttQWbwAVfyMW23pD5IIDjMoZhYfQXiBvP5U6wkCABRPYzY9SRWawsPQgcTI7wd6aYfHVYjwMBz8QmO1qMsOC1eHB3L4jFyTMEkDtN5n6Uwy+XRbKAnWLHlzFG4PDNShlcEESDBi4t9DUU4K7MAcUbktCEEgXiSYFrVLkitrLsv8JFIDrDG6WNtIAAtaL356iaqZxGlFAXzOw2BjtNZvOZ5yIQFROwAdpgyZ0jeNogGhG+PEacYjsDz2/KnQrNTivO3W5j61JQAPzP3zrHumKTGnGuI2O3rtflXf3N23XEuQYjn3vvuKAs1eE+5AB5T5eVXwbCVM322t9f9HpfG/umJzTEsfbyvG8+9WYWXxhfRidDeLTtM7UqBM1z9ZvHp9T2qvFcaZJUAbyYG0/hesvg5TEJE4TlQb3BH3NcGTx+aNyiWGmRad+gAooLNblsSDHgDMCBMSYgnTff7tRCOB4hiCQStiB4jKkee4isc+Vx7WUgCAA48M7xJ5iprkMY62KqLg6i4N3MAWm5M0nQ02bPK5jSfA28zLauZHOeh9qmmIIYsfmgmSCAFEWPS81isLIYsz8MjodSm452Pc+5rv/Tsb+SBEfPsI7cv0FS4r6Pc/htkx9BIDAajtIHNh6XJA5VcM0Y0lTEnc7XNwI8qwX/TsU7sm15xOc77VoMfgZRCXzLBLE23m9vEb3PK9DSXY1JvhDvDzBS67bmTy63rxz/8Ur4rKQwA3H/leOfSs+/A9aO65gsCJmRpMWhu3WhjwB5UPjLpkgC8z4mgW87xyqdq+j3S+GlxMyzmQ/bwkwO9vu9ew808zqnfcdfx86zyfsyw2xmG42OxkdusetOcpw7FVQpcMb3ZN7zczy/Kn6oSbGIzpI8Sg95qtc2VPykAi9rEb2jyH3aqcplnxJKjRpIUmNWo6QTYGwuLXphh8NdRGuR0KiPQT+NL1K9iwZxWiCZPLVBHqRcbVYMSXkMCCNoAuCZuPu3eleYxEwkdnUEqRcAA30bchdqr4DxFcwzIqRAnk0XiZgGah1yUpPsbfDGoEWa5EevKp4OaZDIOluYsbeR3ERf61nsfGxlJJ1BTebiwH0sKVaySW8XO/wCR/Xyq4Jik0z6DhcWYCyr6Gd+24rpzANyb8+1fP2zTgAgtNufmSasTiWMIBZ1G95/OuqGq4nPLSUsGaPFHeykL5Afnv7UTls0xCzew/l/Ws/l8JiJUgeZojL5ll8JZbVLQ7NNh4k7+VtPel3Emhue5n/wejsimlAzuJuY1MIHmqET60h4jmNcxYztMxv67HnSA6+IPhAA7mPrNUYW/L3qvAwHaFUTPK9/rROLw90gMpQkWEkg9wZqlQh3wvjDYYAJ1L06f2n8tqeYfEVdSUczpaBsQdJiehmKwvwG/m/H9ab8FyysGUu6udwCviW0RKk7/AJVMorkcW+AXheZKvOI7qCu4VjeV5C8b07wc1hq3zsV3/wD5sd9pDWqR4DhYq+B31LBBDCZ7CwO4tY3FLuLcKxhGlfiKCNWkGR1LJuPrUXFuux00NsfMoxkM8dNCqQOwPzculSOcwysLrK9IS9xswO+/+qzLO4wIActqIAgzpt2qWVVwHhGEqCOXim29VtQWabL8Yw0DKiM24JLqSs8hFhz8+tZHP5oK+lVECJJvJIB696M4blcQEMyNdTcCZM2gLM1Xm+CYuI7MAFBiNUg2UDaOxppJA22NsrihEDqoGoSYLLF2WxUyf+KtPG4XWFST/SxNgAf4gCec1WeGu+EuGIBAEncWcvssnaBVqfsy7KFYvAYmQmmzAD+Kk9oZPNxltaJCHVpvoFp+U3NjBjnzqGS/aCfjO8kIBaF8RLBVJgWvvM2o1P2Zgh2LnRpi/wDLsYUMTzqGU4VgozgYeK+qNU4TspAJN9QUbwdjyqXtBNhXDeMLiYDOMPU+oIFnwl206SOezbdTFMczxALoIwtROo4gBPgVAQ8H+KCGv5dRVWQkSEy76VYfKuEBqABBhgLi1/KikxGk6sJxIKksuDs0agTrFidxzqHEveinFzSjE+GuAGSFDvEQXI0W2O4t59LqP2zch8NbwVAAFomb+sKK1iZSRaLlSf8AtCJX5ZOsAxyg8qW5p1LjWupksGOXxDEGRBne5uPehKnkblgzP7GM37xiowOiCII8IKsBBm0wfpWmwc+fihBgThBtGq4JYAkkKLaR0/4qLZ/CUyzqpufFhYoNzvdr3/E0Vls5hkBldCFJKn4eJ8zTq0mbm+3ek7bsaaKc3xFlxQi5YOisqO2zM7DV4BtMcufarM/nGRwqYSlR48TEclFgk2WDvFyeVqF4lxcLpUqA2rWiKCXLbBgpJCeZ+lL8DLPjM37xZLaUXUwm93II1H1oUe2F/DUcOz6BAVBIJnpNgJFu1p3tRz8RWPlP0/WkKYzTBSwspsLRE9etpqWLjDmg9yfzpqKCyj9oMt8fCxEUhGcqQzEW0lSbT0U7Ut/ZHINlHZ2YYmtYgWi87mm+WxypjQ6A/MwBm0xy69etdfNAXSWM3LKBuOUChcbQ/Jckkwr6iBJEEkebAA9fbeqlwF8OpUInxMVJJiSIiBYk+59eDFci0iecmT3gR9mu4GKEQIVLkAAud2PMkbSTenQrAs/wfB1IcNWMtDAMVAB5+KZi1gRaao4hw1cNAfiOSSBCqztsZsCABbp0pmmGDzI9SKsXCCmQv1+zSyh4ZlW4RgIDqVlVbG7E3j+EG+9DLkcqW06WkwBq1qGmNpNOsbBDnUwUgjcLP1BB/TpzpZi8GwmM6nUCNnvv6x5gxblWtmVBOX4RhhdKpYzzM9rz9KhhcAwFJ8An+qT7Bp73phl3VBpW6iN5J9Sxv61YuOomfyBE7fe1TZVAxy4AgsEB2JfTEcgRfp9mqEyaGIcsP5TpcW3EMCPUe9VZrLFyScQspJIRhqCyTsSRAG3KhX4biqwOG6CecEc5uApjYXPSmIZ/uGGf/TTy0ge0AV5MmiMCqKDe4gETY3PaaZHAQqC0+c8/aTeuNl07+ZOw7mwX3qbHQFjIuGjOAAflhPmJIMEgXgHfzoPKccUmMYFZPhc6vCdrsQCB52EU0xcJFFlBH+QPmBz84AvvVS4igDwqO8flz/1Q0msj7C8PKh1D6VdSAQSIeNx4tj5868+BA8F3n5XJQm/YGTQD4oG8Fdtok/0238hz3pjkGRh8N4MSVYkXHSeRF7bVHtErDEefz+Lhk6sBEjm2tha+4MVzLcRdyqrjYSEk/LhzHmXAjpzrTYuEyi3jA/haPaT+oPagU4jhqGAfDQjkHQ37Ex1Bv1pKVkuIdksLFUePE1zt4QoB2sF396ILiPE+nexIHOOdKVzyHfFU874ixB5wHiI7VFOIoCCr4axqMKyQZ/mg35xV7kG1jfxkwmJA2E4bf/YkL7Ch81lcRQzM7Ym3hVmBN4+VALXHbeuLjYm8gnkI6jkbn6USyY12uSFtCdSsgXBP+qa1lFUQ9Ft3bFuXyGMWJRPhKxmGIEGZsEnfzG9MEyT2GJjsTvpQ6LSAdiXH/lQL8YZDDh1JMLpFztI0mCNx1rr8QE6tDT8oY6DIa4gh5jnEU3rSqug/xjd1k0+GIAAEdJJJ+t6Dz+MgRg5WGBB8VyDbltMxSLF4l8o0LBmSW2IAtBTnfny3r2Fn2Nwki14iBF5eSWJIrNyfw0UUDYuWwCWcIFHN3Z2n/FiZ/wAu1jQTZrExJXLAROk4j/8A4EW8gAB2pXi68zjsCSEViIGwCnSYMCTqB5c+grT5LL6QAoAAsALmPz5zV1QlngC4bwNkliQzsPE7Ek+n5+VNsvkiPmcDrAJn1296KwUkmXCx1BYg+UdOW9UYudCsQrhoEsZgjzFmA73pNN5GmlgJVABF97TEe+34em9WIBuQLdhp9DBH0/Wkz8ZB/wDUQDazLPuCZ9V9KtTiSj5dRblAZfqqlfXfypbWO0aBRPfsLc+Z1R6T6V51EXAPIk2+sD8/Kk+FxJzZUaP8FX0XU0+ekmu4mbxZFkWdjqZ/yH0MUKIOQa+EvMT7wOg3v9KCdFBgxfbefbnQuK7tu4/wTn0vrHoAfKq/3YGTLnqdWm3cCAPKCewp0Kw4thIAWZVPLUQB+MVL9+wiSAGY9UV2HvEfX3oPDyaiSqBW3uQGI6kidI7m9FYiEAQAemkT7Ty3vufem0gTYpxNEiQw1Xv4QT+R9K86quo67TBIHPbxCJB2Ej1rjayTpB7pybkdJkR6elVtheHWcQ2sDpkqehM3H2OlMgjiFAYWQRtYj1BBAPmt/OqviEwQSANyDI7wf10muYeGS0m032JQzzBtpPr7bVe+ENRGrxc4jX5Xs/40AcwkLExvvHMT1UgH1j1q5ctpN2gz0AFhMi4v5TVWZdcMKXEFidK3m39JW1+hqGJmgwnwgSIMsNWo6RtcmSLMLU+rAIxMVSOeq0i+3cQHb1EVV8SbA+Vha3QeFfpUFwjIBVtvlIMfQlfeKv8AINtaDq/+0gfSkBGWizCJ3mb/ANTG3tJtvTHC4ey+IqHeZF5URzFiQe9z5UEWKAGTO5E7f5Q8n2HlVycVmwYN1mx/+JJNDvoarsUftFm8cMF1IiW1yxNxaFEattwoHegslxpSSJAiP6NW8nfwxGwJo3juD8fRqLJE6diTMbAwRt3oDC4GqXA1Hq2wHlCrTu1kVU8DfiHEWxsLSr6WkFXuGsR0I1cxVHDstGGoc6nkzoAE+Le8KDB+hqOWww2xNuhUz7SRTTLYRTxG82A/TVAA/LzqWklRSdsrGXl/CpgKJlh2iQJtvvYU1wstpCEgkzt/KoIkkmywJ3ojIYYmYBbSxgXJYqdzt0Eidu9X5kqqDVz1AKpFyd5N+/XesW+jVIDkFMRtZ8PiISxMHbV69DV+pVGJKtA0ix3GoCR4e1Wqj6iq6VSWAiFLdIYmTfpXcLUQ41nUTIJmwEk3qWMT8RRDhqNcSx06wWGy2kXXseU0pxlfCLMgAE6rxoJJF1Y/K2xg3tWhxixEQuKNRDatLmYUDe/tS7MYa6/lIDKBA8SRpuHVr/U+VXFkyQAOIqzjUkQdUcpgiDF+f4d6Z/vqlfCqkGdpBM+ZuRP6UhZFUjSogWIXx2mZGq8X2MgRsKP4fgw0Nb+YQSD5bX9K0pEWy3BySAEqHXUxaxdRLMSZg2uTReUyxRwy65vILM9v7S23epNl9N532a4Hk0j8698MmLRB3mx8o29xTeQWAt8urmGCxNx4XB58/l9r1NiijTDARG8TfsBB9B51X8IRsS3OIB9f91BktPQcrH9KzooHXKAsV0hQRKxPK1txO173NFjgWgAnmRzKjfrEe0VY+TcgWcBRsESTcW8SsO9o2FSGVe0BpPVUtfnpUTVxkqyyZJ3hA/wgJWZNyQOXnpjp0JqtcJZOwZhcCASR1DAM3mzRROOx8OpTqPOL8thJO/Qc6gzHo39o8Sz/AFHf0H0oTsdHEWJsxETMNG206m9lFeTCXUAGCyJWAA/fSrJ4R3ualhOZsVZwJtKqo8tvy868zvyLAfxMZae1/wAPsMRemGp2vGwBlV7sQYJ++1APi6TBLrJMlg9+fhHMffapnOppOqNGwEQWPmvLqfah0zCagw+YjwpqYDTe+k/T38wBfjv4tJaGG0KBHMAGTbvaqkxmuI0kzYkDV6VzEY6Vv1/KuvsPL86ZIZhhYheXzLBN+0/rNXYWIikMxjmJPi9NutAvsPL9aF4iJCTex/KhgT4xi4jOGQs40/8AuFIubQN+VzelOJ8Z1K6CNt8UkCCIttyFTzCDoPbvVWgQbDbp5VSZNEW4g+FoDjUb7sZA8x50+y2aV0V33iRIsPIi896yGaUSLdfyp/wL+HyokNDPMIG8RERsT4x7rcVVo5/NzBMPH9oNx714fOa4+1QUcT5iAWHXxMDfqGBX0ojDyUcrdAok/wCSFfv68ypuBygWqeYFMRbhrpO/pJHr4pozDcE2Cx/hfzkbmwoPCYzv9zV+BSZSDVxIm5FoifCefK3IVBsy40+JVidrm/Tci0VRiiw8vzNC4m1ZtFWOMDFBxQ2u+qYjnPpaoJmFUm52aR20tt03oEMbX+7VIfkfwNKh2TbNIUYQwFydjM6VoPEPiDBnAEWFgb3JAMSb0SqjpVqKOlUhMUPgBpVip/xi46wKL4eqiIBkRcFgPx9KMqpfm++tWIJxn5iO+w+sE1Rq7ll6eInve0D6V47VFuX3ypIDrPAEEsBte/pG3lVyNME9dx83ttVKbCoJSYIeJmjeYI9vLb/VdOZvv6b/AI/rS3A2qw8/KltRVluO6kgzBGw9P0PPrVMbyAo38MSekm8/TsK7hfftUk+b1qkSWfFtf5fq3S/5n0qtsRmvpOkbBbT+Nup5/hY2/r+dVt8/r+tAgXQTLuS0mysAR6xyHSrUwtNzBY7kWI7cr9fbrRuJ8x9fzqgfNTA//9k=" alt="Bistun Mountain">
-
-            <div>
-                <h3>Tagh Bostan</h3>
-                <p>Taghbostan is a series of large rock reliefs from the era of Sassanid Empire of Persia, the Iranian dynasty which ruled western Asia from 226 to 650 AD. This example of Sassanid art is located 5 km (3 mi) from the city center of Kermanshah in western Iran. It is located in the heart of the Zagros mountains, where it has endured almost 1,700 years of wind and rain. <br> The carvings, some of the finest and best-preserved examples of Persian sculpture under the Sassanids, include representations of the investitures of Ardashir II (379–383) and Shapur III (383–388). Like other Sassanid symbols, Taghbostan and its relief patterns accentuate power, religious tendencies, glory, honor, the vastness of the court, game and fighting spirit, festivity, joy, and rejoicing. <br> Sassanid kings chose a beautiful setting for their rock reliefs along an historic Silk Road caravan route waypoint and campground. The reliefs are adjacent a sacred spring that empties into a large reflecting pool at the base of a mountain cliff. </p>
+            <div class="border_middle">
+                <h3 id="m2"><b>History of Kermanshah</b></h3> <hr>
+                <p>Kermanshah was founded by Bahram IV, he founded Kermanshah and applied his former title to the new city (City of the) King of Kerman. In Iran and Ieaq war damaged lot and many people died because of location of Kermanshah.<br>After the revolution in 1979, the city was named Ghahramanshahr for a short period of time, and later the name of the city as well as the province changed to Bakhtaran, apparently due to the presence of the word "Shah" in the original name.<br> Bakhtaran means western, which refers to the location of the city and the province within Iran. After the Iran–Iraq War, however, the city was renamed Kermanshah, as it resonated more with the desire of its residents, the Persian literature, and the collective memory of the Iranians.<br> Because of its antiquity, attractive landscapes, rich culture and Neolithic villages, Kermanshah is considered one of the cradles of prehistoric cultures.<br> According to archaeological surveys and excavation, the Kermanshah area has been occupied by prehistoric people since the Lower Paleolithic period, and continued to later Paleolithic periods till late Pleistocene period. The Lower Paleolithic evidence consists of some handaxes found in the Gakia area to the east of the city. The Middle Paleolithic remains have been found in various parts of the province, especially in the northern vicinity of the city in Tang-e Kenesht, Tang-e Malaverd and near Taq-e Bostan. </p> 
             </div>
 
             <br>
-            <br><br> <hr>   
-        </div>
-
-        <div class="border_middle">
-            <h3><b>Zagros climate</b></h3> <hr>
-            <p>
-                Kermanshah has a climate which is heavily influenced by the proximity of the Zagros mountains, classified as a hot-summer Mediterranean climate (Csa). The city's altitude and exposed location relative to westerly winds makes precipitation a little bit high (more than twice that of Tehran), but at the same time produces huge diurnal temperature swings especially in the virtually rainless summers, which remain extremely hot during the day. Kermanshah experiences rather cold winters and there are usually rainfalls in fall and spring. Snow cover is seen for at least a couple of weeks in winter. <br> <b>There is an table about general information in Zagros:</b>
-            </p>
-            <div>
-                <table>
-                    <tr>
-                      <th>Month</th> 
-                      <th>Jan</th>
-                      <th>Feb</th>
-                      <th>Mar</th>
-                      <th>Apr</th>
-                      <th>May</th>
-                      <th>Jun</th>
-                      <th>Jul</th>
-                      <th>Aug</th>
-                      <th>Sep</th>
-                      <th>Oct</th>
-                      <th>Nov</th>
-                      <th>Dec</th>
-                    </tr>
-                    <tr>
-                      <td>Recorded high°C</td>
-                      <td>20.2</td>
-                      <td>21.8</td>
-                      <td>28.4</td>
-                      <td>38.5</td>
-                      <td>33.7</td>
-                      <td>44.1</td>
-                      <td>44.3</td>
-                      <td>44.5</td>
-                      <td>34.5</td>
-                      <td>25.4</td>
-                      <td>36.5</td>
-                      <td>37.5</td>
-                    </tr>
-                    <tr>
-                        <td>Average high°C</td>
-                        <td>20.2</td>
-                        <td>21.8</td>
-                        <td>28.4</td>
-                        <td>38.5</td>
-                        <td>33.7</td>
-                        <td>44.1</td>
-                        <td>44.3</td>
-                        <td>44.5</td>
-                        <td>34.5</td>
-                        <td>25.4</td>
-                        <td>36.5</td>
-                        <td>37.5</td>
-                    </tr>
-                    <tr>
-                        <td>Daily mean°C</td>
-                        <td>20.2</td>
-                        <td>21.8</td>
-                        <td>28.4</td>
-                        <td>38.5</td>
-                        <td>33.7</td>
-                        <td>44.1</td>
-                        <td>44.3</td>
-                        <td>44.5</td>
-                        <td>34.5</td>
-                        <td>25.4</td>
-                        <td>36.5</td>
-                        <td>37.5</td>
-                    </tr>
-                    <tr>
-                        <td>Average low°C</td>
-                        <td>20.2</td>
-                        <td>21.8</td>
-                        <td>28.4</td>
-                        <td>38.5</td>
-                        <td>33.7</td>
-                        <td>44.1</td>
-                        <td>44.3</td>
-                        <td>44.5</td>
-                        <td>34.5</td>
-                        <td>25.4</td>
-                        <td>36.5</td>
-                        <td>37.5</td>
-                    </tr>
-                    <tr>
-                        <td>Record low°C</td>
-                        <td>20.2</td>
-                        <td>21.8</td>
-                        <td>28.4</td>
-                        <td>38.5</td>
-                        <td>33.7</td>
-                        <td>44.1</td>
-                        <td>44.3</td>
-                        <td>44.5</td>
-                        <td>34.5</td>
-                        <td>25.4</td>
-                        <td>36.5</td>
-                        <td>37.5</td>
-                    </tr>
-                  </table>
+            <div class="border_middle">
+                <h3 id="m3"><b>Culture of Kermanshah</b></h3> <hr>
+                Kermanshah is a traditional city because of the history of city. Kermanshah has a very rich culture and the people of the city include different religions and languages. Kermanshah has many traditional industries like:<br>
+                <ul>
+                    <li>Give</li>
+                    <li>Jajim</li>
+                    <li>Kurdi carpet</li>
+                </ul> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzloLZ1KVMo7j32I3cELOu0RTv_i2fdV1OQ&usqp=CAU" alt="Noon berenji"> 
+                Also, the people of Kermanshah care about their food, or in other words, they are food lover, so they have much tastier food the most populer food and cookies in kermanshah are: <br>
+                
+                <ul>
+                    <li>Dande kebab</li>
+                    <li>kak</li>
+                    <li>Noon berenji</li>
+                    <li>khelal</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                
             </div>
-        </div>
-        <br><br>
 
-        <div>  
-            <video width="500" controls>
-                <source src="./sample-video.mp4">
-              </video>
-        </div>
+            <br>
+            <div class="border_middle">
+            
+                <h3 id="m4"><b>Populer place of Kermanshah</b></h3> <hr>
+                <div class="flex">
+                        <div>
+                            <h3>Bistun Mountain</h3>
+                            <p>The Behistun inscription is considered as a UNESCO World Heritage Site.The inscription includes three versions of the same text, written in three different cuneiform script languages: Old Persian, Elamite, and Babylonian. A British army officer, Henry Rawlinson, had the inscription transcribed in two parts, in 1835 and 1843. Rawlinson was able to translate the Old Persian cuneiform text in 1838, and the Elamite and Babylonian texts were translated by Rawlinson and others after 1843. Babylonian was a later form of Akkadian: both are Semitic languages. In effect, then, the inscription is to cuneiform what the Rosetta Stone is to Egyptian hieroglyphs: the document most crucial in the decipherment of a previously lost script.<br>The inscription is approximately 15 metres high by 25 meters wide, and 100 meters up a limestone cliff from an ancient road connecting the capitals of Babylonia and Media (Babylon and Ecbatana). It is extremely inaccessible as the mountainside was removed to make the inscription more visible after its completion. <br> The Old Persian text contains 414 lines in five columns; the Elamite text includes 593 lines in eight columns and the Babylonian text is in 112 lines. The inscription was illustrated by a life-sized bas-relief of Darius, holding a bow as a sign of kingship, with his left foot on the chest of a figure lying on his back before him. The prostrate figure is reputed to be the pretender Gaumata. Darius is attended to the left by two servants, and ten one-metre figures stand to the right, with hands tied and rope around their necks, representing conquered peoples. Faravahar floats above, giving his blessing to the king. One figure appears to have been added after the others were completed, as was (oddly enough) Darius' beard, which is a separate block of stone attached with iron pins and lead. </p>
+                        </div>
+                        <div>
+                            <h3>Tagh Bostan</h3>
+                            <p>Taghbostan is a series of large rock reliefs from the era of Sassanid Empire of Persia, the Iranian dynasty which ruled western Asia from 226 to 650 AD. This example of Sassanid art is located 5 km (3 mi) from the city center of Kermanshah in western Iran. It is located in the heart of the Zagros mountains, where it has endured almost 1,700 years of wind and rain. <br> The carvings, some of the finest and best-preserved examples of Persian sculpture under the Sassanids, include representations of the investitures of Ardashir II (379–383) and Shapur III (383–388). Like other Sassanid symbols, Taghbostan and its relief patterns accentuate power, religious tendencies, glory, honor, the vastness of the court, game and fighting spirit, festivity, joy, and rejoicing. <br> Sassanid kings chose a beautiful setting for their rock reliefs along an historic Silk Road caravan route waypoint and campground. The reliefs are adjacent a sacred spring that empties into a large reflecting pool at the base of a mountain cliff. </p>
+                        </div>
+                        <div>
+                            <h3>Katibe</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet iste exercitationem, nemo illum accusantium saepe. Omnis aperiam maxime ipsam beatae optio delectus ab deleniti modi illum! Reiciendis eum tenetur dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere explicabo saepe eligendi earum corrupti! Rem, a earum. Atque, quis at. Vero, tempora facilis aliquam recusandae hic vitae voluptas eaque reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores necessitatibus maiores a sapiente, officia corrupti nobis velit mollitia inventore fuga dolore esse sit exercitationem iste nulla laboriosam dolorem magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam expedita quia doloribus explicabo dicta! Eius commodi eos cupiditate velit magni nobis, pariatur tenetur placeat reprehenderit tempore alias aspernatur quod voluptate? </p>
+                        </div>
+                 </div>
+                <br>
+                <br><br>   
+            </div>
+
+            <div class="border_middle">
+                <h3><b>Zagros climate</b></h3> <hr>
+                <p>
+                    Kermanshah has a climate which is heavily influenced by the proximity of the Zagros mountains, classified as a hot-summer Mediterranean climate (Csa). The city's altitude and exposed location relative to westerly winds makes precipitation a little bit high (more than twice that of Tehran), but at the same time produces huge diurnal temperature swings especially in the virtually rainless summers, which remain extremely hot during the day. Kermanshah experiences rather cold winters and there are usually rainfalls in fall and spring. Snow cover is seen for at least a couple of weeks in winter. <br> <b>There is an table about general information in Zagros:</b>
+                </p>
+                <div>
+                    <table>
+                        <tr>
+                        <th>Month</th> 
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Apr</th>
+                        <th>May</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Aug</th>
+                        <th>Sep</th>
+                        <th>Oct</th>
+                        <th>Nov</th>
+                        <th>Dec</th>
+                        </tr>
+                        <tr>
+                        <td>Recorded high°C</td>
+                        <td>20.2</td>
+                        <td>21.8</td>
+                        <td>28.4</td>
+                        <td>38.5</td>
+                        <td>33.7</td>
+                        <td>44.1</td>
+                        <td>44.3</td>
+                        <td>44.5</td>
+                        <td>34.5</td>
+                        <td>25.4</td>
+                        <td>36.5</td>
+                        <td>37.5</td>
+                        </tr>
+                        <tr>
+                            <td>Average high°C</td>
+                            <td>20.2</td>
+                            <td>21.8</td>
+                            <td>28.4</td>
+                            <td>38.5</td>
+                            <td>33.7</td>
+                            <td>44.1</td>
+                            <td>44.3</td>
+                            <td>44.5</td>
+                            <td>34.5</td>
+                            <td>25.4</td>
+                            <td>36.5</td>
+                            <td>37.5</td>
+                        </tr>
+                        <tr>
+                            <td>Daily mean°C</td>
+                            <td>20.2</td>
+                            <td>21.8</td>
+                            <td>28.4</td>
+                            <td>38.5</td>
+                            <td>33.7</td>
+                            <td>44.1</td>
+                            <td>44.3</td>
+                            <td>44.5</td>
+                            <td>34.5</td>
+                            <td>25.4</td>
+                            <td>36.5</td>
+                            <td>37.5</td>
+                        </tr>
+                        <tr>
+                            <td>Average low°C</td>
+                            <td>20.2</td>
+                            <td>21.8</td>
+                            <td>28.4</td>
+                            <td>38.5</td>
+                            <td>33.7</td>
+                            <td>44.1</td>
+                            <td>44.3</td>
+                            <td>44.5</td>
+                            <td>34.5</td>
+                            <td>25.4</td>
+                            <td>36.5</td>
+                            <td>37.5</td>
+                        </tr>
+                        <tr>
+                            <td>Record low°C</td>
+                            <td>20.2</td>
+                            <td>21.8</td>
+                            <td>28.4</td>
+                            <td>38.5</td>
+                            <td>33.7</td>
+                            <td>44.1</td>
+                            <td>44.3</td>
+                            <td>44.5</td>
+                            <td>34.5</td>
+                            <td>25.4</td>
+                            <td>36.5</td>
+                            <td>37.5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br><br>
+
+            <div>  
+                <video width="500" controls>
+                    <source src="./sample-video.mp4">
+                </video>
+            </div>
+        
         <br>
 
         <div class="footer">
             <span>&copy; Kermanshah city 2021</span>
             <p>Footer of page</p>
-          </div>
-
-        
-         
-       
+        </div>     
    </div>
     
 </body>
